@@ -4,7 +4,7 @@ def solution(n):
         print(list(range(1, n+1, 2)))
         answer = sum(range(1, n+1, 2))
     else:
-        # answer = sum(i**2 in range(2,n+1,2))
-        for i in range(2,n+1,2):
-            answer += i**2
+        answer = sum(i**2 for i in range(2,n+1,2))
+        # for i in range(2,n+1,2):
+        #     answer += i**2
     return answer
