@@ -23,9 +23,8 @@ def solution(progresses, speeds):
     days = []
     pro_speed = list(zip(progresses, speeds))
     for i, j in pro_speed:
-        day = (99-i)//j+1
-        # day = math.ceil((100-i)//j)
-        # math.floor
+        # day = (99-i)//j+1
+        day = math.ceil((100-i)/j)
         days.append(day)
     days_que = deque(days)
     return count(days_que)
