@@ -1,5 +1,5 @@
 def solution(n):
-    prime_n = [2,3,5,7,11,13,17,19,23]
+    prime_n = [2,3,5,7,11,13,17,19]
     result = []
     for pm in prime_n:
         for i in range(pm*2,n+1,pm):
